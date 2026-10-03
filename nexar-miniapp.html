@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>NEXAR ESPORTS</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet"><style>
+:root{--bg:#08090C;--c:#12141A;--r:#FF3B46;--dr:#8F1720;--t:#F5F5F5;--s:#9296A0;--g:#20C878;--o:#FFAA2B;--fr:#E53945;--gold:#D9A72E;--b:#272A32}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--t);font:14px system-ui,sans-serif;padding-bottom:76px}
+#app{padding:0 14px 14px;max-width:560px;margin:auto}
+header{display:flex;align-items:center;gap:10px;padding:12px 0;position:sticky;top:0;background:var(--bg);z-index:5}
+header .lg{height:34px;border-radius:8px}header b{font-style:italic;font-weight:900;letter-spacing:1px}header b i{color:var(--r)}.sp{flex:1}
+header button{background:var(--c);border:1px solid var(--b);color:var(--t);border-radius:10px;padding:7px 10px}
+header .adm{background:var(--r);border:0;font-weight:700}.av{width:32px;height:32px;border-radius:50%;background:var(--dr);display:grid;place-items:center;object-fit:cover;font-weight:700}
+.ban{border-radius:16px;padding:18px;min-height:190px;background-size:cover;background-position:center;border:1px solid var(--b);position:relative;overflow:hidden}
+.ban:before,.hero:before,.im:before,.cc:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,9,12,.92),rgba(8,9,12,.35))}.ban>*,.cc>*{position:relative}
+.ban small{color:var(--r);font-weight:700}.ban h2{font-size:22px;margin:4px 0;font-style:italic}.ban p{color:var(--s)}
+#cd{display:flex;gap:8px;margin-top:12px}#cd div{background:rgba(18,20,26,.85);border:1px solid var(--b);border-radius:10px;padding:6px 0;width:58px;text-align:center;font-size:10px;color:var(--s)}#cd b{display:block;font-size:20px;color:var(--t)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.cc{border-radius:14px;height:96px;padding:10px;background-size:cover;background-position:center;border:1px solid var(--b);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}.cc b{font-size:16px}.cc span{font-size:11px;color:var(--s)}
+input,select,textarea{width:100%;background:var(--c);border:1px solid var(--b);color:var(--t);border-radius:10px;padding:11px;margin:4px 0;font:inherit}
+.pills{display:flex;gap:6px;overflow-x:auto;margin:8px 0 12px}.pills button{white-space:nowrap;background:var(--c);border:1px solid var(--b);color:var(--s);border-radius:20px;padding:7px 12px;font-size:12px}.pills .on{background:var(--r);color:#fff;border-color:var(--r)}
+.tc{background:var(--c);border:1px solid var(--b);border-radius:16px;overflow:hidden;margin-bottom:12px}
+.im,.hero{height:120px;background-size:cover;background-position:center;position:relative}.hero{height:170px;border-radius:16px;overflow:hidden}
+.tag{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.7);padding:3px 9px;border-radius:8px;font-weight:700;font-size:12px;z-index:1}
+.st{position:absolute;right:10px;top:10px;background:rgba(0,0,0,.7);padding:3px 9px;border-radius:8px;font-size:11px;font-weight:700;z-index:1}.pin{position:absolute;right:10px;bottom:8px;z-index:1}
+.bd2{padding:12px}.bd2 p,.mt{color:var(--s);margin:6px 0}.pb{height:5px;background:var(--b);border-radius:5px;overflow:hidden;margin-bottom:10px}.pb i{display:block;height:100%;background:var(--r)}
+.b,.b2{border:0;border-radius:10px;padding:11px 14px;font-weight:700;color:#fff;background:var(--r);margin:4px 4px 4px 0}.b2{background:var(--c);border:1px solid var(--b)}.bd2 .b{width:100%}
+h4{margin:16px 0 8px;letter-spacing:1px;color:var(--s);font-size:12px}h2,h3{margin:6px 0}
+.card{background:var(--c);border:1px solid var(--b);border-radius:14px;padding:12px;margin:10px 0}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.sl{background:var(--c);border:1px solid var(--b);border-radius:10px;padding:7px 3px;text-align:center;font-size:11px;min-height:58px}
+.sl b{display:block;font-size:14px}.sl i{display:block;font-style:normal;color:var(--fr);font-size:10px}.sl.fr{border-color:#14573a;color:var(--g)}.sl.bd{border-color:#5a1b21}.sl.bd span{color:var(--t)}.sl.me{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.br{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px}.col{display:flex;flex-direction:column;justify-content:space-around;gap:8px;min-width:132px}.col small{color:var(--s);font-size:10px;text-align:center}
+.m{border:1px solid var(--b);border-radius:8px;background:var(--c);overflow:hidden}.tm{padding:7px 8px;font-size:11px;border-bottom:1px solid var(--b)}.tm:last-child{border:0}.tm.w{background:var(--dr);font-weight:700}.m.gold{padding:12px;border-color:var(--gold);color:var(--gold);text-align:center;font-weight:700}
+.bk{background:0;border:0;color:var(--s);padding:6px 0}.row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b)}.row span:first-child{color:var(--s)}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#0d0f14;border-top:1px solid var(--b);padding-bottom:env(safe-area-inset-bottom,0)}nav button{flex:1;background:0;border:0;color:var(--s);padding:10px;font-weight:700;font-size:12px}nav .on{color:var(--r)}
+#splash{position:fixed;inset:0;background:#000;z-index:99;display:grid;place-items:center;text-align:center}#splash img{width:200px;border-radius:12px;animation:gl 2s ease-out both}#splash h1{font-size:13px;letter-spacing:8px;color:var(--r);opacity:0;animation:fi .5s .8s forwards}
+#splash .ld{width:120px;height:3px;background:var(--b);margin:20px auto 0;border-radius:3px;overflow:hidden}#splash .ld i{display:block;height:100%;background:var(--r);animation:ld 2s linear both}
+@keyframes gl{0%{opacity:0;transform:scale(.9);filter:drop-shadow(0 0 0 #FF3B46)}50%{opacity:1;filter:drop-shadow(0 0 18px #FF3B46)}100%{opacity:1;transform:scale(1);filter:drop-shadow(0 0 8px #8F1720)}}@keyframes fi{to{opacity:1}}@keyframes ld{from{width:0}to{width:100%}}
+#toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#222;border:1px solid var(--r);padding:9px 14px;border-radius:10px;z-index:100;display:none}
+
+:root{--cy:#19D3FF}
+body{font-family:Rajdhani,'Segoe UI',system-ui,sans-serif;font-size:15px;background:radial-gradient(900px 380px at 50% -120px,rgba(255,59,70,.16),transparent),linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px) 0 0/100% 4px,var(--bg)}
+header b,h2,.ban h2,.cc b,#splash .nx{font-family:Orbitron,Rajdhani,sans-serif}
+header b{font-size:15px}h2{font-size:18px;letter-spacing:1px}
+.ban,.tc,.cc,.b,.b2,.card{border-radius:0;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
+.b,.b2{clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));letter-spacing:.5px}
+.b{background:linear-gradient(135deg,#FF3B46,#8F1720);box-shadow:0 0 14px rgba(255,59,70,.35)}
+.tc,.card{border-left:3px solid var(--r)}.card{background:linear-gradient(180deg,#151821,#12141A)}
+.ban{border-left:3px solid var(--r);min-height:170px}.ban small{color:var(--cy);letter-spacing:2px}
+#cd div{border-radius:0;border-bottom:2px solid var(--r)}#cd b{color:var(--cy);font:800 20px Orbitron}
+.cg{gap:12px}.cc{height:150px;padding:14px;justify-content:flex-end}.cc b{font-size:22px;letter-spacing:2px}.cc span{font-size:13px;color:var(--t);font-weight:600}
+.cc:after{content:"";position:absolute;left:0;bottom:0;height:3px;width:100%;background:linear-gradient(90deg,var(--r),var(--cy))}
+.tag{color:var(--cy);border:1px solid rgba(25,211,255,.4);border-radius:0}.st{border-radius:0}
+.pb i{background:linear-gradient(90deg,var(--r),var(--cy))}h4{color:var(--cy);letter-spacing:2px}
+.pills button{border-radius:0;font-weight:700}.pills .on{background:linear-gradient(135deg,#FF3B46,#8F1720)}
+.sl{border-radius:4px}nav{background:rgba(8,9,12,.96)}nav button{font:700 12px Orbitron,sans-serif;padding:9px;border-top:2px solid transparent}nav .on{border-top-color:var(--r);color:var(--t)}
+#splash{background:radial-gradient(circle at 50% 45%,#2a0609,#000 65%)}
+#splash .nx{font-size:46px;font-weight:900;letter-spacing:6px;animation:gl2 2s ease-out both}#splash h1{font-family:Orbitron;color:var(--r)}
+@keyframes gl2{0%{opacity:0;letter-spacing:22px;text-shadow:none}45%{opacity:1;letter-spacing:6px;text-shadow:0 0 26px #FF3B46}100%{opacity:1;letter-spacing:6px;text-shadow:0 0 10px #8F1720}}
+.cs{font-size:12px;color:var(--s);margin:4px 0 8px}.cs b{color:var(--cy);font-family:Orbitron,sans-serif;font-size:12px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:90;display:grid;place-items:center;padding:20px}.dl{background:var(--c);border:1px solid var(--b);border-left:3px solid var(--r);padding:16px;width:100%;max-width:360px;max-height:90vh;overflow:auto}.dl .b,.dl .b2{width:100%;margin:6px 0}.cb{display:block;margin:12px 0;font-weight:700}.cb input{width:auto;margin-right:8px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.g2 .b2{margin:0}.bdg{text-align:center;margin:0}.bdg .ic{font-size:32px}.bdg b{display:block;font-family:Orbitron,sans-serif;font-size:12px;margin:4px 0}.bdg small{color:var(--s);font-size:11px;line-height:1.2;display:block}
+.sl.rv{border-color:#7a5f14}.sl.rv i{color:var(--o)}.lgd{font-size:12px;color:var(--s);margin:6px 0}
+
+:root{--cy:#D9A72E}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:14px;background:radial-gradient(700px 300px at 50% -140px,rgba(255,59,70,.09),transparent),var(--bg);padding-bottom:100px}
+header b,h2,h3,.ban h2,.cc b,#splash .nx,#splash h1,#cd b,.cs b,.bdg b,nav button,.pills button,.b,.b2{font-family:Oswald,'Arial Narrow',sans-serif;letter-spacing:.6px}
+.ban,.tc,.cc,.card,.b,.b2{clip-path:none}
+.ban,.tc,.cc,.card{border-radius:22px;border:1px solid var(--b);border-left:1px solid var(--b)}
+.card{background:var(--c)}.ban{min-height:170px}
+.tc.s-open{border-left:3px solid var(--g)}.tc.s-live{border-left:3px solid var(--o)}.tc.s-done{border-left:3px solid var(--fr)}
+.b,.b2{border-radius:999px;box-shadow:none;padding:11px 18px}.b{background:var(--r)}.b2{background:var(--c)}
+.pills button{border-radius:999px;padding:9px 16px;font-size:13px}.pills .on{background:transparent;color:var(--r);border:1.5px solid var(--r)}
+input,select,textarea{border-radius:16px;padding:13px 14px}
+.tag,.st{border-radius:999px;color:var(--t);border:1px solid var(--b);background:rgba(18,20,26,.85)}.tag{color:var(--r);border-color:var(--dr)}
+.st{background:rgba(18,20,26,.85)}
+.cc{height:140px;border-radius:24px}.cc:after{display:none}.cc b{font-size:22px}.cc span{font-size:12px;color:#d6d8de}
+#cd div{border-radius:14px;border:1px solid var(--b);border-bottom:1px solid var(--b)}#cd b{color:var(--t);font-size:22px;font-weight:600}
+.cs b{color:var(--t);font-size:13px}.pb{height:6px;border-radius:6px}.pb i{background:var(--r);border-radius:6px}
+h4{color:var(--s);letter-spacing:1.5px;font-family:Oswald,sans-serif;font-weight:500}
+.sl{border-radius:14px}.m{border-radius:14px}.dl{border-radius:24px;border-left:1px solid var(--b)}.hero{border-radius:22px}
+header .nxb{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#FF3B46,#8F1720);display:grid;place-items:center;font:700 16px Oswald,sans-serif;letter-spacing:1px}
+header b{display:flex;flex-direction:column;line-height:1.05;font-size:19px;font-style:normal;font-weight:700}header b i{font-size:10px;letter-spacing:4px;color:var(--r);font-style:normal;font-weight:600}
+header button{width:40px;height:40px;border-radius:50%;padding:0;font-size:16px}header .adm{width:auto;border-radius:999px;padding:0 16px;height:40px;font:600 13px Oswald,sans-serif;letter-spacing:1px;background:var(--r)}
+.av{border:2px solid var(--dr)}
+nav{left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));border:1px solid var(--b);border-radius:30px;background:rgba(18,20,26,.97);padding:6px;gap:6px}
+nav button{border:0;border-radius:24px;padding:12px;font-size:13px;letter-spacing:1.5px;color:var(--s)}nav .on{background:var(--r);color:#fff}
+#toast{bottom:104px;border-radius:14px}
+#splash{background:var(--bg)}#splash .nx{font-family:Oswald,sans-serif;font-weight:700;font-size:54px}
+.em{height:1.2em;width:1.2em;vertical-align:-.25em;display:inline-block;margin:0 .05em}.bdg .ic .em{height:1em;width:1em}
+.pr{display:flex;align-items:center;gap:12px;margin:8px 0}.pr .av{width:42px;height:42px;flex:none}
+</style></head><body>
+<div id="splash"><div><div class="nx">NEXAR</div><h1>ESPORTS</h1><div class="ld"><i></i></div></div></div>
+<div id="app"></div><nav id="nav"></nav><div id="toast"></div><div id="modal"></div>
+<script>
+const tg=window.Telegram&&Telegram.WebApp;if(tg){tg.ready();tg.expand();try{tg.setHeaderColor('#08090C');tg.setBackgroundColor('#08090C')}catch(x){}}
+const TU=tg&&tg.initDataUnsafe&&tg.initDataUnsafe.user;
+const ME=TU||{id:111,first_name:'Demo',last_name:'',username:'demo'};
+const ADMIN=7951717415;
+// DIQQAT: haqiqiy himoya uchun admin tekshiruvi serverda (initData imzosi) bo'lishi kerak. #admin faqat Telegramdan tashqarida ko'rish uchun.
+const isAdmin=ME.id===ADMIN||(!TU&&location.hash==='#admin');
+const G=['TDM','LIVIK','ERANGEL','WOW'],RN=['1/8 FINAL','CHORAK FINAL','YARIM FINAL','FINAL'];
+const GR={TDM:'#3a0d12,#12141A',LIVIK:'#0d2a1f,#12141A',ERANGEL:'#2a2410,#12141A',WOW:'#1a1033,#12141A'};
+const ST={open:['🟢','QABUL OCHIQ','--g'],live:['🟠','JARAYONDA','--o'],done:['🔴','YAKUNLANGAN','--fr']};
+const BD=[['🏆','CHAMPION','Turnir g‘olibi'],['⚡','ELITE','Elite darajadagi o‘yinchi'],['🔥','MVP','Eng yaxshi o‘yinchi'],['🎯','SNIPER','Aniqligi yuqori o‘yinchi'],['🛡️','VETERAN','Ko‘p turnirlarda qatnashgan'],['💎','LEGEND','Maxsus yuqori daraja'],['👑','TOP PLAYER','Reytingdagi kuchli o‘yinchi'],['🚀','RISING STAR','Tez rivojlanayotgan o‘yinchi']],CP=['30 UC','60 UC'];
+const K='nexar_v1';let S=null,TI=null;
+try{S=JSON.parse(localStorage.getItem(K))}catch(x){}
+if(!S)S={banner:{img:'',title:'',desc:'',tid:null},cats:{TDM:'',LIVIK:'',ERANGEL:'',WOW:''},users:{},tours:[{id:1,name:'NEXAR WEEKLY #01',game:'TDM',date:new Date(Date.now()+2*864e5).toISOString().slice(0,10),time:'21:00',limit:16,status:'open',img:'',info:'PUBG Mobile TDM 1v1 turnir.',pin:false,slots:{},parts:[],B:null}]};
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(x){toast('Xotira to‘ldi: rasm kichikroq bo‘lsin')}};
+const e=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';');
+const $=s=>document.querySelector(s),p2=n=>String(n).padStart(2,'0');
+const T=id=>S.tours.find(t=>t.id==id),dt=t=>new Date(t.date+'T'+t.time).getTime(),fd=d=>d.split('-').reverse().join('.');
+const players=t=>(t.game==='TDM'?Object.entries(t.slots).map(([s,p])=>({...p,slot:+s})):t.parts).filter(p=>!p.rv);
+const cnt=t=>players(t).length,nm=(t,s)=>`[${p2(s)}] ${e(t.slots[s]&&t.slots[s].nick||'—')}`;
+const U=()=>{const u=S.users[ME.id]||(S.users[ME.id]={nick:'',pubg:'',coupons:[],badges:[]});u.un=ME.username||'';return u};
+const bg=(t,g)=>t.img?`background-image:url('${t.img}')`:`background-image:linear-gradient(135deg,${GR[g||t.game]})`;
+let V={v:'home',f:'all',q:'',cat:null,tid:null,edit:null,at:'t'};
+const go=(v,x)=>{if(v==='detail'&&V.v!=='detail')V.from=V.v;Object.assign(V,{v},x||{});render();scrollTo(0,0)};
+const back=()=>{if(V.v==='detail')go(V.from&&V.from!=='profile'?V.from:'home');else go('home')};
+if(tg&&tg.BackButton)tg.BackButton.onClick(back);
+function toast(m){const t=$('#toast');t.textContent=m;t.style.display='block';clearTimeout(toast.i);toast.i=setTimeout(()=>t.style.display='none',2200)}
+function img(cb){const i=document.createElement('input');i.type='file';i.accept='image/*';i.onchange=()=>{const f=i.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const m=new Image();m.onload=()=>{const k=Math.min(1,800/m.width),c=document.createElement('canvas');c.width=m.width*k;c.height=m.height*k;c.getContext('2d').drawImage(m,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.7))};m.src=r.result};r.readAsDataURL(f)};i.click()}
+function near(c){const b=T(S.banner.tid);if(b&&(!c||b.game===c))return b;return S.tours.filter(t=>(!c||t.game===c)&&t.status==='open'&&dt(t)>Date.now()).sort((a,b)=>dt(a)-dt(b))[0]}
+function tick(){document.querySelectorAll('.cdn').forEach(el=>{const t=T(el.dataset.t);if(!t)return;const d=t.status==='done'?0:Math.max(0,dt(t)-Date.now())/1e3|0,v=[d/86400|0,d%86400/3600|0,d%3600/60|0,d%60];el.querySelectorAll('b').forEach((b,i)=>b.textContent=p2(v[i]))})}
+setInterval(tick,1000);
+const hdr=()=>`<header><span class="nxb">NX</span><b>NEXAR<i>ESPORTS</i></b><span class="sp"></span><button onclick="go('players',{pq:''});setTimeout(()=>{const q=$('#pq');q&&q.focus()},50)">🔍</button>${isAdmin?'<button class="adm" onclick="go(\'admin\')">🛡 ADMIN</button>':''}${TU&&TU.photo_url?`<img class="av" src="${e(TU.photo_url)}">`:`<div class="av">${e((ME.first_name||'?')[0])}</div>`}</header>`;
+function cs(t){return `<div class="cs cdn" data-t="${t.id}">⏳ <b>00</b>k <b>00</b>:<b>00</b>:<b>00</b></div>`}
+function banner(c){const t=near(c),b=S.banner;if(!t)return `<div class="card"><small style="color:var(--cy)">🔥 ENG YAQIN TURNIR</small><p class="mt">${c||'Hozircha'} bo‘yicha yaqin turnir yo‘q</p></div>`;const o=b.tid==t.id;
+return `<div class="ban" style="${bg(t.img?t:(o?b:t),t.game)}" onclick="go('detail',{tid:${t.id}})"><small>🔥 ENG YAQIN TURNIR · ${t.game}</small><h2>${e(o&&b.title||t.name)}</h2><p>${e(o&&b.desc||fd(t.date)+' · '+t.time)}</p><p style="margin-top:8px;font-size:11px">BOSHLANISHIGA</p><div id="cd" class="cdn" data-t="${t.id}"><div><b>00</b>KUN</div><div><b>00</b>SOAT</div><div><b>00</b>DAQIQA</div><div><b>00</b>SONIYA</div></div></div>`}
+const cats=()=>`<div class="cg">${G.map(g=>{const a=S.tours.filter(t=>t.game===g),on=a.some(t=>t.status==='open');return `<div class="cc" style="${bg({img:S.cats[g]},g)}" onclick="go('cat',{cat:'${g}',q:'',f:'all'})"><b>${g}</b><span>${a.length} turnir · ${on?'Turnir bor 🟢':'Turnir yo‘q 🔴'}</span></div>`}).join('')}</div>`;
+const card=t=>{const [ic,sn,col]=ST[t.status],n=cnt(t);return `<div class="tc s-${t.status}" onclick="go('detail',{tid:${t.id}})"><div class="im" style="${bg(t)}"><span class="tag">${t.game}</span><span class="st" style="color:var(${col})">${ic} ${sn}</span>${t.pin?'<span class="pin">📌</span>':''}</div><div class="bd2"><h3>${e(t.name)}</h3><p>📅 ${fd(t.date)} &nbsp; 🕐 ${t.time} &nbsp; 👥 ${n}/${t.limit}</p>${t.status==='done'?'':cs(t)}<div class="pb"><i style="width:${Math.min(100,n/t.limit*100)}%"></i></div><button class="b">KIRISH →</button></div></div>`};
+function list(){const a=S.tours.filter(t=>(!V.cat||t.game===V.cat)&&(V.f==='all'||t.status===V.f)&&t.name.toLowerCase().includes(V.q.toLowerCase())).sort((x,y)=>(y.pin|0)-(x.pin|0)||dt(x)-dt(y));return a.length?a.map(card).join(''):'<p class="mt">Turnir topilmadi</p>'}
+function result(t,s){if(t.champion==s)return '🏆 CHAMPION';const h=hist(t,s),l=h[h.length-1];return l?l.r+' · '+l.res:'—'}
+function mineList(c){const m=S.tours.filter(t=>(!c||t.game===c)&&t.status==='done'&&players(t).some(p=>p.uid==ME.id));return '<h4>QATNASHGAN TURNIRLAR</h4>'+(m.length?m.map(t=>{const p=players(t).find(p=>p.uid==ME.id);return `<div class="card" onclick="go('detail',{tid:${t.id}})"><b>${e(t.name)}</b><p class="mt">${t.game} · ${fd(t.date)} · ${t.game==='TDM'?result(t,p.slot):(p.place==1?'🏆 G‘OLIB':p.place?p.place+'-o‘rin':'Qatnashdi')}</p></div>`}).join(''):'<p class="mt">Hali yakunlangan turnirda qatnashmagansiz.</p>')}
+function myMatches(){const m=S.tours.filter(t=>t.status!=='done'&&players(t).some(p=>p.uid==ME.id)).sort((x,y)=>dt(x)-dt(y));
+return '<h4>MENING MATCHLARIM</h4>'+(m.length?m.map(t=>{const p=players(t).find(p=>p.uid==ME.id),[ic,sn]=ST[t.status];let info='';if(t.game==='TDM'){info='Slot '+p2(p.slot);if(t.B){const h=hist(t,p.slot),l=h[h.length-1];if(l)info+=' · '+l.r+' vs '+l.op}}return `<div class="card" onclick="go('detail',{tid:${t.id}})"><b>${e(t.name)}</b><span style="float:right;font-size:12px">${ic} ${sn}</span><p class="mt">${t.game} · 📅 ${fd(t.date)} · 🕐 ${t.time}${info?'<br>'+info:''}</p></div>`}).join(''):'<p class="mt">Hozircha faol matchingiz yo‘q. O‘yin turini tanlab turnirga qo‘shiling.</p>')}
+function home(){return '<h4>O‘YIN TURINI TANLANG</h4>'+cats()+myMatches()}
+function catView(){return `<button class="bk" onclick="back()">← Orqaga</button><h2>${V.cat||'BARCHA TURNIRLAR'}</h2><div class="card" style="padding:0">${banner(V.cat)}</div><input id="q" placeholder="Turnir qidirish..." value="${e(V.q)}" oninput="V.q=this.value;$('#lst').innerHTML=list()"><div class="pills">${[['all','BARCHASI'],['open','QABUL OCHIQ'],['live','JARAYONDA'],['done','YAKUNLANGAN']].map(([k,l])=>`<button class="${V.f===k?'on':''}" onclick="V.f='${k}';render()">${l}</button>`).join('')}</div><div id="lst">${list()}</div>`+mineList(V.cat)}
+function hist(t,s){const o=[];if(!t.B)return o;t.B.forEach((R,r)=>{const m=R.find(m=>m.a==s||m.b==s);if(!m)return;const op=m.a==s?m.b:m.a;o.push({r:RN[r],op:op?nm(t,op):'—',res:m.w==null?'⏳ kutilmoqda':m.w==s?'✅ G‘ALABA':'❌ MAG‘LUBIYAT'})});return o}
+const cell=(p,n,oc,x)=>`<div class="sl ${p?(p.rv?'rv':'bd'):'fr'} ${p&&p.uid==ME.id?'me':''}" onclick="${oc}"><b>${p2(n)}</b>${p?`<span>${p.rv?'ADMIN':e(p.nick)}</span><i>${p.rv?'🟡 BAND':'🔴 BAND'}</i>${p.coupon?`<i style="color:var(--cy)">🎟 ${e(p.coupon)}</i>`:''}${x||''}`:'<span>🟢 BOSH</span>'}</div>`;
+const LG='<div class="lgd">🟢 BOSH &nbsp; 🔴 BAND (NIK) &nbsp; 🟡 BAND (admin)</div>';
+function slots(t){let h=LG+'<div class="sg">';for(let i=1;i<=16;i++)h+=cell(t.slots[i],i,`sclick(${t.id},${i})`);return h+'</div>'}
+function parts(t){let h=LG+'<div class="sg">';for(let i=0;i<t.limit;i++){const p=t.parts[i];h+=cell(p,i+1,`pclick(${t.id},${i})`,p&&p.place?`<i style="color:var(--gold)">${p.place==1?'🏆 G‘OLIB':p.place+'-o‘rin'}</i>`:'')}return h+'</div>'}
+function join(id,slot){const t=T(id),u=U();if(t.status!=='open')return toast('Qabul yopiq');if(!u.nick){toast('Avval profilda PUBG NIK kiriting');return go('profile')}if(players(t).some(p=>p.uid==ME.id))return toast('Siz allaqachon qatnashyapsiz');if(t.game==='TDM'&&t.slots[slot])return toast('Slot band');if(t.game!=='TDM'&&t.parts.length>=t.limit)return toast('Joylar to‘lgan');
+const cp=[...new Set(u.coupons.filter(c=>!c.used).map(c=>c.v))];
+mdl(t.game==='TDM'?'Slot '+p2(slot):e(t.name),`<p class="mt">${e(u.nick)} sifatida qatnashasizmi?</p>${cp.length?`<label class="cb"><input type="checkbox" id="usecp" onchange="$('#cpv').style.display=this.checked?'block':'none'"> 🎟 Kupon ishlatish ✅</label><select id="cpv" style="display:none">${cp.map(v=>`<option>${e(v)}</option>`).join('')}</select><p class="mt" style="font-size:12px">Kupon bilan g‘olib bo‘lsangiz, yutuqdan tashqari kupon qiymatida bonus beriladi.</p>`:''}<button class="b" onclick="doJoin(${t.id},${slot||0})">Qatnashish</button><button class="b2" onclick="mdl()">Rad etish</button>`)}
+function doJoin(id,slot){const t=T(id),u=U(),ch=$('#usecp'),v=ch&&ch.checked?$('#cpv').value:null;mdl();if(t.status!=='open')return toast('Qabul yopiq');const p={uid:ME.id,nick:u.nick};
+if(v){const c=u.coupons.find(c=>!c.used&&c.v===v);if(c){c.used=true;c.tid=t.id;p.coupon=v}}
+if(t.game==='TDM'){if(t.slots[slot])return toast('Slot band');t.slots[slot]=p}else t.parts.push(p);save();render();toast('Qo‘shildingiz ✅')}
+function mdl(h,b){$('#modal').innerHTML=h?`<div class="ov"><div class="dl"><h3>${h}</h3>${b}</div></div>`:''}
+function rel(t,p){const u=S.users[p.uid];if(p.coupon&&u){const c=u.coupons.find(c=>c.used&&c.tid===t.id);if(c){c.used=false;delete c.tid}}}
+function grantBonus(t,p){const o=S.users[t.bonusTo];if(o)o.coupons=o.coupons.filter(c=>c.bonus!==t.id);t.bonusTo=null;if(p&&p.coupon&&S.users[p.uid]){S.users[p.uid].coupons.push({v:p.coupon,used:false,bonus:t.id});t.bonusTo=p.uid}}
+function winCard(t){const w=t.game==='TDM'?(t.champion&&t.slots[t.champion]):t.parts.find(p=>p.place==1);if(!w)return '';return `<div class="card" style="border-color:var(--gold);color:var(--gold)"><b>🏆 ${t.game==='TDM'?'CHAMPION':'G‘OLIB'}: ${e(w.nick)}</b>${w.coupon?`<br>🎁 Bonus: +${e(w.coupon)} (kupon ishlatilgan)`:''}</div>`}
+function sclick(id,i){const t=T(id),p=t.slots[i];if(isAdmin){
+if(!p){const a=prompt('Slot '+i+': 1 = o‘yinchi qo‘shish, 2 = joyni band qilish (🟡)');if(a==1){const n=prompt('O‘yinchi NIK:');if(n)t.slots[i]={uid:'m'+Date.now(),nick:n.trim()}}else if(a==2)t.slots[i]={uid:'admin',nick:'ADMIN',rv:true}}
+else{const a=prompt(p.rv?`Slot ${i} (🟡 admin band): 1 = bo‘shatish, 2 = ko‘chirish`:`Slot ${i}: 1 = o‘chirish, 2 = ko‘chirish, 3 = NIK tahrir`);
+if(a==1){rel(t,p);delete t.slots[i]}else if(a==2){const to=+prompt('Qaysi slotga (1-16)?');if(to>0&&to<17&&!t.slots[to]){t.slots[to]=p;delete t.slots[i]}else toast('Slot band yoki xato')}else if(a==3&&!p.rv){const n=prompt('Yangi NIK',p.nick);if(n)p.nick=n.trim()}}
+save();render();return}
+if(p)return toast(p.rv?'Slot admin tomonidan band 🟡':'Slot band 🔴');if(t.B)return toast('Setka yaratilgan');join(id,i)}
+function pclick(id,i){const t=T(id),p=t.parts[i];if(!isAdmin){if(!p)join(id);return}
+if(!p){const a=prompt('1 = o‘yinchi qo‘shish, 2 = joyni band qilish (🟡)');if(a==1){const n=prompt('O‘yinchi NIK:');if(n)t.parts.push({uid:'m'+Date.now(),nick:n.trim()})}else if(a==2)t.parts.push({uid:'admin',nick:'ADMIN',rv:true})}
+else{const a=prompt(p.rv?'x = bo‘shatish':'Joy raqami (1 = G‘OLIB), x = o‘chirish');if(a==='x'){rel(t,p);t.parts.splice(i,1)}else if(+a>0&&!p.rv){p.place=+a;if(+a==1)t.status='done'}}
+grantBonus(t,t.parts.find(q=>q.place==1));save();render()}
+function mkB(id){const t=T(id);if(cnt(t)<2)return toast('Kamida 2 o‘yinchi kerak');t.B=[8,4,2,1].map((n,r)=>Array.from({length:n},(_,i)=>({a:r?null:2*i+1,b:r?null:2*i+2,w:null})));t.champion=null;t.status='live';save();render()}
+function rstB(id){if(!confirm('Setka o‘chirilsinmi?'))return;const t=T(id);t.B=null;t.champion=null;t.status='open';grantBonus(t,null);save();render()}
+function swapP(id){const t=T(id);if(t.B[0].some(m=>m.w))return toast('Avval g‘oliblarni bekor qiling');const r=(prompt('Ikki slot raqami almashadi (masalan 2-9):')||'').split('-').map(Number),f=[];t.B[0].forEach(m=>['a','b'].forEach(k=>f.push([m,k])));const x=f.find(([m,k])=>m[k]==r[0]),y=f.find(([m,k])=>m[k]==r[1]);if(!x||!y)return toast('Xato');const v=x[0][x[1]];x[0][x[1]]=y[0][y[1]];y[0][y[1]]=v;save();render()}
+function sw(t,r,i,s){const m=t.B[r][i];m.w=s;if(r<3){const n=t.B[r+1][i>>1],k=i&1?'b':'a';if(n[k]!==s){n[k]=s;if(n.w!=null)sw(t,r+1,i>>1,null)}}else{t.champion=s;t.status=s?'done':'live';grantBonus(t,s?t.slots[s]:null)}}
+function win(id,r,i,s){const t=T(id);sw(t,r,i,t.B[r][i].w==s?null:s);save();render()}
+const bracket=t=>`<div class="br">${t.B.map((R,r)=>`<div class="col"><small>${RN[r]}</small>${R.map((m,i)=>`<div class="m">${['a','b'].map(k=>`<div class="tm ${m.w&&m.w==m[k]?'w':''}" ${isAdmin&&m[k]?`onclick="win(${t.id},${r},${i},${m[k]})"`:''}>${m[k]?nm(t,m[k]):'—'}</div>`).join('')}</div>`).join('')}</div>`).join('')}<div class="col"><small>🏆 CHAMPION</small><div class="m gold">${t.champion?nm(t,t.champion):'—'}</div></div></div>`;
+function detail(){const t=T(V.tid);if(!t)return '<p class="mt">Topilmadi</p>';const [ic,sn]=ST[t.status],me=players(t).find(p=>p.uid==ME.id),tdm=t.game==='TDM';
+let stage='—';if(tdm){if(!t.B)stage='Ro‘yxat yig‘ilmoqda';else if(t.champion)stage='Yakunlangan';else{const r=t.B.findIndex(R=>R.some(m=>m.w==null&&(m.a||m.b)));stage=RN[r<0?3:r]}}
+let h=`<button class="bk" onclick="back()">← Orqaga</button><div class="hero" style="${bg(t)}"><span class="tag">${t.game}</span></div><h2>${e(t.name)}</h2>${t.status==='done'?'':cs(t)}<div class="card">`+
+[['Holat',ic+' '+sn],['Sana',fd(t.date)],['Vaqt',t.time],['Ishtirokchilar',cnt(t)+'/'+t.limit],['Sizning holatingiz',me?'✅ Qatnashyapsiz'+(tdm?' (slot '+p2(me.slot)+')':''):'Qatnashmayapsiz']].map(([a,b])=>`<div class="row"><span>${a}</span><span>${b}</span></div>`).join('')+`<p class="mt">${e(t.info)}</p></div>`;
+if(me&&t.status==='open'&&!t.B)h+=`<button class="b2" onclick="leave(${t.id})">🚪 Turnirdan chiqish</button>`;
+if(isAdmin)h+=`<div class="card"><b>ADMIN</b><br><button class="b2" onclick="V.edit=${t.id};go('admin',{at:'t'})">✏️ Tahrirlash</button>${tdm?(t.B?`<button class="b2" onclick="swapP(${t.id})">↔ Juftlik</button><button class="b2" onclick="rstB(${t.id})">♻ Reset</button>`:`<button class="b" onclick="mkB(${t.id})">SETKA YARATISH</button>`):`<button class="b2" onclick="sclick2(${t.id})">➕ O‘yinchi</button>`}</div>`;
+if(tdm){if(me&&t.B){const hs=hist(t,me.slot),l=hs[hs.length-1];h+=`<h4>MENING O‘YINIM</h4><div class="card"><div class="row"><span>Slot</span><span>${p2(me.slot)}</span></div><div class="row"><span>Joriy bosqich</span><span>${stage}</span></div><div class="row"><span>Raqib</span><span>${l?l.op:'—'}</span></div><div class="row"><span>Natija</span><span>${result(t,me.slot)}</span></div>${hs.map(x=>`<div class="row"><span>${x.r} vs ${x.op}</span><span>${x.res}</span></div>`).join('')}</div>`}
+h+=winCard(t)+`<h4>BOSQICH: ${stage}</h4>`+(t.B?bracket(t):'<div class="mt">Slot tanlang:</div>'+slots(t))}
+else{h+=winCard(t)+'<h4>ISHTIROKCHILAR</h4>'+parts(t)+(!me&&t.status==='open'?`<button class="b" style="width:100%;margin-top:10px" onclick="join(${t.id})">QO‘SHILISH</button>`:'')}
+return h}
+function leave(id){const t=T(id);if(t.B)return toast('Setka yaratilgan — adminga murojaat qiling');if(!confirm('Turnirdan chiqasizmi?'))return;if(t.game==='TDM'){for(const k in t.slots)if(t.slots[k].uid==ME.id){rel(t,t.slots[k]);delete t.slots[k]}}else{t.parts.filter(p=>p.uid==ME.id).forEach(p=>rel(t,p));t.parts=t.parts.filter(p=>p.uid!=ME.id)}save();render()}
+function sclick2(id){const t=T(id);if(t.parts.length<t.limit)pclick(id,t.parts.length);else toast('Limit to‘lgan')}
+function profile(){const u=U();return `<div class="card" style="text-align:center">${TU&&TU.photo_url?`<img class="av" style="width:72px;height:72px;margin:auto" src="${e(TU.photo_url)}">`:`<div class="av" style="width:72px;height:72px;margin:auto;font-size:28px">${e((ME.first_name||'?')[0])}</div>`}<h2>${e(ME.first_name)} ${e(ME.last_name||'')}</h2><p class="mt">${ME.username?'@'+e(ME.username):''}<br>Telegram ID: ${ME.id}</p></div>
+<h4>PUBG MA’LUMOTLARI</h4><div class="card"><input id="pid" placeholder="PUBG ID" value="${e(u.pubg)}" inputmode="numeric"><input id="pnk" placeholder="PUBG NIK" value="${e(u.nick)}"><button class="b" onclick="savePr()">SAQLASH</button></div>
+<h4>🎟 KUPON</h4>${u.coupons.length?`<div class="g2">${u.coupons.map(c=>`<div class="card bdg"><div class="ic">🎟</div><b>${e(c.v)}</b><small style="color:${c.used?'var(--s)':'var(--g)'}">${c.used?'ISHLATILGAN':c.bonus?'BONUS · FAOL':'FAOL'}</small></div>`).join('')}</div>`:'<p class="mt">Kupon yo‘q</p>'}
+<h4>🏅 NISHONLAR</h4>${u.badges.length?`<div class="g2">${u.badges.map(b=>{const x=BD.find(q=>q[1]===b)||['🏅',b,''];return `<div class="card bdg"><div class="ic">${x[0]}</div><b>${e(x[1])}</b><small>${e(x[2])}</small></div>`}).join('')}</div>`:'<p class="mt">Nishon yo‘q</p>'}`}
+function savePr(){const u=U();u.pubg=$('#pid').value.trim();u.nick=$('#pnk').value.trim();save();toast('Saqlandi ✅')}
+function admin(){if(!isAdmin)return '<p class="mt">Ruxsat yo‘q</p>';const tabs=[['t','TURNIR'],['i','RASM'],['p','PROFIL']];
+let h=`<button class="bk" onclick="back()">← Orqaga</button><div class="pills">${tabs.map(([k,l])=>`<button class="${V.at===k?'on':''}" onclick="V.at='${k}';V.edit=null;render()">${l}</button>`).join('')}</div>`;
+if(V.at==='t'){if(V.edit){const t=V.edit==='new'?{}:T(V.edit)||{};h+=`<div class="card"><h3>${t.id?'Tahrirlash':'Yangi turnir'}</h3><input id="f_n" placeholder="Nomi" value="${e(t.name)}"><select id="f_g">${G.map(g=>`<option ${t.game==g?'selected':''}>${g}</option>`).join('')}</select><input id="f_d" type="date" value="${t.date||''}"><input id="f_t" type="time" value="${t.time||'21:00'}"><input id="f_l" type="number" placeholder="Limit (TDM=16)" value="${t.limit||16}"><select id="f_s">${Object.keys(ST).map(k=>`<option value="${k}" ${t.status==k?'selected':''}>${ST[k][1]}</option>`).join('')}</select><textarea id="f_i" placeholder="Ma’lumot">${e(t.info)}</textarea><button class="b2" onclick="img(d=>{TI=d;toast('Rasm tanlandi')})">🖼 Rasm</button><button class="b" onclick="saveT()">SAQLASH</button><button class="b2" onclick="V.edit=null;render()">Bekor</button></div>`}
+else h+=`<button class="b" onclick="V.edit='new';render()">➕ Yangi turnir</button>`+S.tours.map(t=>`<div class="card"><b>${e(t.name)}</b> · ${t.game} · ${ST[t.status][1]}<br><button class="b2" onclick="V.edit=${t.id};render()">✏️</button><button class="b2" onclick="go('detail',{tid:${t.id}})">👥</button><button class="b2" onclick="pin(${t.id})">${t.pin?'📌 Olish':'📌 Qadash'}</button><button class="b2" onclick="del(${t.id})">🗑</button></div>`).join('')}
+if(V.at==='i'){const b=S.banner;h+=`<div class="card"><h3>Asosiy banner</h3><input id="bt" placeholder="Sarlavha" value="${e(b.title)}"><input id="bd" placeholder="Tavsif" value="${e(b.desc)}"><select id="bw"><option value="">Avto (eng yaqin turnir)</option>${S.tours.map(t=>`<option value="${t.id}" ${b.tid==t.id?'selected':''}>${e(t.name)}</option>`).join('')}</select><button class="b2" onclick="img(d=>{S.banner.img=d;save();render()})">🖼 Banner rasmi</button><button class="b" onclick="saveBn()">SAQLASH</button></div><div class="card"><h3>Kategoriya rasmlari</h3>${G.map(g=>`<button class="b2" onclick="img(d=>{S.cats['${g}']=d;save();render()})">🖼 ${g}</button>`).join('')}</div>`}
+if(V.at==='p'){h+=`<button class="b" onclick="addU()">➕ ID bo‘yicha o‘yinchi</button>`+Object.entries(S.users).map(([id,u])=>`<div class="card"><b>${e(u.nick||'—')}</b> · ID ${e(id)}<br>${u.coupons.map((c,i)=>`<span class="b2" style="display:inline-block"><span onclick="S.users[${id}].coupons[${i}].used=!S.users[${id}].coupons[${i}].used;save();render()">🎟 ${e(c.v)} ${c.used?'✔ ishlatilgan':'● faol'}</span> &nbsp;<span onclick="S.users[${id}].coupons.splice(${i},1);save();render()">✕</span></span>`).join('')}${u.badges.map((b,i)=>`<span class="b2" style="display:inline-block" onclick="S.users[${id}].badges.splice(${i},1);save();render()">🏅 ${e(b)} ✕</span>`).join('')}<br><button class="b2" onclick="addC(${id})">+ Kupon</button><button class="b2" onclick="addB(${id})">+ Nishon</button></div>`).join('')}
+return h}
+function saveT(){const o={name:$('#f_n').value.trim(),game:$('#f_g').value,date:$('#f_d').value,time:$('#f_t').value,limit:+$('#f_l').value||16,status:$('#f_s').value,info:$('#f_i').value};if(!o.name||!o.date)return toast('Nom va sana kerak');if(o.game==='TDM')o.limit=16;let t=V.edit==='new'?null:T(V.edit);if(!t){t={id:Date.now(),slots:{},parts:[],B:null,pin:false,img:''};S.tours.push(t)}Object.assign(t,o);if(TI)t.img=TI;TI=null;V.edit=null;save();render()}
+function saveBn(){S.banner.title=$('#bt').value;S.banner.desc=$('#bd').value;S.banner.tid=$('#bw').value?+$('#bw').value:null;save();toast('Saqlandi ✅')}
+const pin=id=>{const t=T(id);t.pin=!t.pin;save();render()},del=id=>{if(confirm('O‘chirilsinmi?')){S.tours=S.tours.filter(t=>t.id!=id);save();render()}};
+function addU(){const id=(prompt('Telegram ID (faqat raqam):')||'').trim();if(/^\d+$/.test(id)){S.users[id]=S.users[id]||{nick:'',pubg:'',coupons:[],badges:[]};save();render()}else toast('Faqat raqam')}
+function addC(id){mdl('Kupon berish',CP.map(v=>`<button class="b" onclick="giveC(${id},'${v}')">🎟 ${v}</button>`).join('')+'<button class="b2" onclick="mdl()">Yopish</button>')}
+function giveC(id,v){S.users[id].coupons.push({v,used:false});save();mdl();render()}
+function addB(id){mdl('Nishon berish','<div class="g2">'+BD.map(b=>`<button class="b2" onclick="giveB(${id},'${b[1]}')">${b[0]} ${b[1]}</button>`).join('')+'</div><button class="b2" onclick="mdl()">Yopish</button>')}
+function giveB(id,n){const u=S.users[id];if(u.badges.includes(n))return toast('Bu nishon allaqachon bor');u.badges.push(n);save();mdl();render()}
+function people(){const M={};Object.entries(S.users).forEach(([id,u])=>{M[id]={uid:id,nick:u.nick,pubg:u.pubg,un:u.un,badges:u.badges||[]}});
+S.tours.forEach(t=>players(t).forEach(p=>{const k=String(p.uid);if(!M[k])M[k]={uid:k,nick:p.nick,badges:[]};if(!M[k].nick)M[k].nick=p.nick}));return Object.values(M).filter(x=>x.uid!=='admin'&&x.nick)}
+function plist(){const q=(V.pq||'').toLowerCase().replace(/^@/,'');const a=people().filter(x=>!q||[x.nick,x.pubg,x.un,x.uid].some(v=>String(v||'').toLowerCase().includes(q))).slice(0,60);
+return a.length?a.map(x=>`<div class="card pr" onclick="pinfo('${e(x.uid)}')"><div class="av">${e((x.nick||'?')[0].toUpperCase())}</div><div><b>${e(x.nick)}</b><p class="mt" style="margin:2px 0 0">${x.pubg?'PUBG ID '+e(x.pubg)+' · ':''}${/^\d+$/.test(x.uid)?'TG '+x.uid:'Admin qo‘shgan'}</p></div><span class="sp"></span><span>${(x.badges||[]).slice(0,3).map(b=>(BD.find(z=>z[1]===b)||['🏅'])[0]).join('')}</span></div>`).join(''):'<p class="mt">O‘yinchi topilmadi</p>'}
+function playersView(){return `<button class="bk" onclick="back()">← Orqaga</button><h2>O‘YINCHILARNI QIDIRISH</h2><input id="pq" placeholder="PUBG NIK, PUBG ID, Telegram ID yoki @username" value="${e(V.pq||'')}" oninput="V.pq=this.value;$('#plist').innerHTML=plist()"><div id="plist">${plist()}</div>`}
+function pinfo(id){const x=people().find(p=>p.uid===id);if(!x)return;const st=S.tours.reduce((a,t)=>{if(players(t).some(p=>String(p.uid)===id)){a.pl++;const w=t.game==='TDM'?(t.champion&&t.slots[t.champion]):t.parts.find(p=>p.place==1);if(w&&String(w.uid)===id)a.w++}return a},{pl:0,w:0}),num=/^\d+$/.test(id);
+mdl(e(x.nick),`<div class="row"><span>PUBG ID</span><span>${e(x.pubg||'—')}</span></div><div class="row"><span>Telegram</span><span>${x.un?'@'+e(x.un):num?'ID '+id:'—'}</span></div><div class="row"><span>Turnirlar</span><span>${st.pl}</span></div><div class="row"><span>G‘alabalar</span><span>${st.w}</span></div>${(x.badges||[]).length?`<div class="g2" style="margin:10px 0">${x.badges.map(b=>{const z=BD.find(q=>q[1]===b)||['🏅',b];return `<div class="card bdg" style="padding:8px"><div class="ic">${z[0]}</div><b>${e(z[1])}</b></div>`}).join('')}</div>`:''}${num?`<button class="b" onclick="dm('${id}')">💬 Telegramda yozish</button>`:''}<button class="b2" onclick="mdl()">Yopish</button>`)}
+function dm(id){const u=S.users[id],l=u&&u.un?'https://t.me/'+u.un:'tg://user?id='+id;if(tg&&tg.openTelegramLink&&u&&u.un)tg.openTelegramLink(l);else if(tg&&tg.openLink)tg.openLink(l);else window.open(l,'_blank')}
+function render(){U();$('#app').innerHTML=hdr()+(V.v==='home'?home():V.v==='cat'?catView():V.v==='players'?playersView():V.v==='detail'?detail():V.v==='profile'?profile()+mineList(null):admin());
+if(tg&&tg.BackButton)(V.v==='home'||V.v==='profile')?tg.BackButton.hide():tg.BackButton.show();
+$('#nav').innerHTML=`<button class="${V.v!=='profile'?'on':''}" onclick="go('home',{cat:null})">🏆 TURNIR</button><button class="${V.v==='profile'?'on':''}" onclick="go('profile')">👤 PROFIL</button>`;tick()}
+const EU=x=>'https://cdn.jsdelivr.net/npm/emoji-datasource-apple/img/apple/64/'+x+'.png';
+const ER=/(?![\u2194\u00A9\u00AE\u2122])\p{Extended_Pictographic}(?:\uFE0F|\p{Emoji_Modifier}|\u200D\p{Extended_Pictographic}\uFE0F?)*/gu,EH=/(?![\u2194\u00A9\u00AE\u2122])\p{Extended_Pictographic}/u;
+function emoImg(m){const cp=[...m].map(c=>c.codePointAt(0).toString(16)),a=cp.filter(x=>x!=='fe0f'),c=[cp.join('-'),a.join('-'),[a[0],'fe0f'].concat(a.slice(1)).join('-')].filter((x,i,r)=>r.indexOf(x)===i),im=new Image();let k=0;im.className='em';im.alt=m;im.draggable=false;
+im.onerror=()=>{if(++k<c.length)im.src=EU(c[k]);else{const sp=document.createElement('span');sp.className='noemo';sp.textContent=m;im.replaceWith(sp)}};im.src=EU(c[0]);return im}
+function emo(root){if(!root)return;let L=[];if(root.nodeType===3)L=[root];else if(root.nodeType===1){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);while(w.nextNode())L.push(w.currentNode)}
+L.forEach(n=>{const p=n.parentNode;if(!p||/^(SCRIPT|STYLE|TEXTAREA|OPTION)$/.test(p.nodeName)||(p.classList&&p.classList.contains('noemo'))||!EH.test(n.nodeValue))return;const t=n.nodeValue,fr=document.createDocumentFragment();let i=0;t.replace(ER,(m,o)=>{fr.append(t.slice(i,o));fr.append(emoImg(m));i=o+m.length;return m});fr.append(t.slice(i));n.replaceWith(fr)})}
+new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(emo))).observe(document.body,{childList:true,subtree:true});
+render();setTimeout(()=>{const s=$('#splash');s&&s.remove()},2000);
+</script></body></html>
